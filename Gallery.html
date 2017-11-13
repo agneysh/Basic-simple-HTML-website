@@ -1,0 +1,291 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Gallery</title>
+        <meta charset="UTF-8" />
+		<link rel="stylesheet" type="text/css" href="assets/css/gallery_style.css" />
+		<script type="text/javascript" language="javascript" src="assets/js/library/jquery-1.11.0.js"></script>
+		<script type="text/javascript" language="javascript" src="assets/js/library/jquery-1.11.0.min.js"></script>
+		
+		
+				<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+				<link href='http://fonts.googleapis.com/css?family=Josefin+Slab' rel='stylesheet' type='text/css' />
+
+		<link rel="stylesheet" href="assets/css/menu_layout.css"/>
+		</head>
+	<body>
+			<body style="background-image: url(images/pattern.png), url(images/10.jpg);">
+			<!-- Header-->
+	<header id="header_m">
+					<nav id="nav">
+					<ul>
+						<li><a href="menu.html">Home</a></li>
+					<li>
+						<select id="dropmenu">
+						  <option value="sgag">Fish Tank</option>
+						  <option value="sglg">Fish Foods</option>
+						  <option value="sgwg">Lighting</option>
+						  <option value="sgfg">Decorations</option>
+						  <option value="sgflg">Fishes</option>
+						</select>
+					</li>
+					
+						<li><a href="video.html">Video</a></li>
+						<li><a href="buy_print.html"</a></li>
+						<li><a href="contact_us.html">Contact Us</a></li>
+	
+					</ul>
+				</nav>
+			</header>
+			
+			<div id="pic" class="centimg" align="middle"> </div>
+				<ul class="bmenu1">
+		
+		<div class="container">
+		
+		<div id="sgag" class="group">
+		<p>Welcome to my world.</p>
+			<img src="images/thumbnails/04.jpg" width="120px" height="120px" onclick= "sgag0();" >
+			<img src="images/thumbnails/05.jpg" width="120px" height="120px" onclick= "sgag1();" >
+			<img src="images/thumbnails/24.jpg" width="120px" height="120px" onclick= "sgag2();" >
+
+			<img src="images/thumbnails/37.jpg" width="120px" height="120px" onclick= "sgag3();" >
+			<img src="images/thumbnails/36.jpg" width="120px" height="120px" onclick= "sgag4();" >
+			<img src="images/thumbnails/35.jpg" width="120px" height="120px" onclick= "sgag5();" >
+		<p>Our Fish Tanks</br> <p>
+					
+		</div>
+
+			<div id="sglg" class="group">
+			<p style="text-align:center;">Fish Food</p>
+			<img src="images/thumbnails/01.jpg" width="120px" height="120px" onclick= "sglg0();" >
+			<img src="images/thumbnails/02.jpg" width="120px" height="120px" onclick= "sglg1();" >
+			<img src="images/thumbnails/15.jpg" width="120px" height="120px" onclick= "sglg2();" >
+			<img src="images/thumbnails/20.jpg" width="120px" height="120px" onclick= "sglg3();" >
+			<img src="images/thumbnails/27.jpg" width="120px" height="120px" onclick= "sglg4();" >
+			<img src="images/thumbnails/31.jpg" width="120px" height="120px" onclick= "sglg5();" >
+		<p> Different types of fish foods<p>
+		</div>
+
+			<div id="sgwg" class="group">
+			<p>Lighting </p>
+			<img src="images/thumbnails/03.jpg" width="120px" height="120px" onclick= "sgwg0();" > 
+			<img src="images/thumbnails/07.jpg" width="120px" height="120px" onclick= "sgwg1();" > 
+			<img src="images/thumbnails/26.jpg" width="120px" height="120px" onclick= "sgwg2();" >
+			<img src="images/thumbnails/40.jpg" width="120px" height="120px" onclick= "sgwg3();" > 
+			<img src="images/thumbnails/41.jpg" width="120px" height="120px" onclick= "sgwg4();" > 
+			<img src="images/thumbnails/42.jpg" width="120px" height="120px" onclick= "sgwg5();" > 
+			<p>The different types of lighting we have</p>
+		</div>
+			<div id="sgfg" class="group">
+			<p>Decorations</p>
+			
+			<img src="images/thumbnails/16.jpg" width="120px" height="120px" onclick= "sgfg0();" > 
+			<img src="images/thumbnails/18.jpg" width="120px" height="120px" onclick= "sgfg1();" > 
+			<img src="images/thumbnails/22.jpg" width="120px" height="120px" onclick= "sgfg2();" > 
+			<img src="images/thumbnails/44.jpg" width="120px" height="120px" onclick= "sgfg3();" > 
+			<img src="images/thumbnails/45.jpg" width="120px" height="120px" onclick= "sgfg4();" > 
+			<img src="images/thumbnails/46.jpg" width="120px" height="120px" onclick= "sgfg5();" > 
+			<p>Aquarium Decorations</p>
+		</div>
+		
+			<div id="sgflg" class="group">
+			<p>Fishes</p>
+			<img src="images/thumbnails/43.jpg" width="120px" height="120px" onclick= "sgflg0();" > 
+			<img src="images/thumbnails/47.jpg" width="120px" height="120px" onclick= "sgflg1();" > 
+			<img src="images/thumbnails/48.jpg" width="120px" height="120px" onclick= "sgflg2();" > 
+			<img src="images/thumbnails/49.jpg" width="120px" height="120px" onclick= "sgflg3();" > 
+			<img src="images/thumbnails/50.jpg" width="120px" height="120px" onclick= "sgflg4();" > 
+			<img src="images/thumbnails/51.jpg" width="120px" height="120px" onclick= "sgflg5();" > 
+			<p>Some of Our Fishes</p>
+			
+		</div>
+		</div>
+		</ul>	
+				<script>
+				
+				//this part is for hiding the images which are placed as a stack on one another
+		$(document).ready(function () {
+		  $('.group').hide();
+		  $('#sgag').show();
+		  $('#dropmenu').change(function () {
+			$('.group').hide();
+			$('#'+$(this).val()).show();
+		  })
+		});
+
+		$(document).ready(function(){
+			$("#hide").click(function(){
+				$("#img").hide();
+			});
+			$("#show").click(function(){
+				$("#img").show();
+			});
+		});
+		
+		//simple technique to just get the element which is the image and set its visibility to true.
+
+				function sgag0(){
+		var pic ="<img src=images/04.jpg>";
+				document.getElementById("pic").innerHTML = pic;
+
+								}
+								
+				function sgag1(){
+		var pic ="<img src=images/05.jpg>";
+				document.getElementById("pic").innerHTML = pic;
+
+				}
+				function sgag2(){
+       var pic ="<img src=images/24.jpg>";
+				document.getElementById("pic").innerHTML = pic;
+
+				}
+				function sgag3(){
+       var pic ="<img src=images/37.jpg>";
+				document.getElementById("pic").innerHTML = pic;
+
+				}
+				function sgag4(){
+       var pic ="<img src=images/36.jpg>";
+				document.getElementById("pic").innerHTML = pic;
+
+				}
+				function sgag5(){
+       var pic ="<img src=images/35.jpg>";
+				document.getElementById("pic").innerHTML = pic;
+
+
+				}
+				
+				function sglg0(){
+		var pic ="<img src=images/01.jpg>";
+				document.getElementById("pic").innerHTML = pic;
+
+								}
+								
+				function sglg1(){
+		var pic ="<img src=images/02.jpg>";
+				document.getElementById("pic").innerHTML = pic;
+
+				}
+				function sglg2(){
+       var pic ="<img src=images/15.jpg>";
+				document.getElementById("pic").innerHTML = pic;
+
+				}
+				function sglg3(){
+       var pic ="<img src=images/20.jpg>";
+				document.getElementById("pic").innerHTML = pic;
+
+				}
+				function sglg4(){
+       var pic ="<img src=images/27.jpg>";
+				document.getElementById("pic").innerHTML = pic;
+
+				}
+				function sglg5(){
+       var pic ="<img src=images/31.jpg>";
+				document.getElementById("pic").innerHTML = pic;
+
+				}
+				
+				function sgwg0(){
+		var pic ="<img src=images/03.jpg>";
+				document.getElementById("pic").innerHTML = pic;
+
+								}
+								
+				function sgwg1(){
+		var pic ="<img src=images/07.jpg>";
+				document.getElementById("pic").innerHTML = pic;
+
+				}
+				function sgwg2(){
+       var pic ="<img src=images/26.jpg>";
+				document.getElementById("pic").innerHTML = pic;
+
+				}
+				function sgwg3(){
+       var pic ="<img src=images/40.jpg>";
+				document.getElementById("pic").innerHTML = pic;
+
+				}
+				function sgwg4(){
+       var pic ="<img src=images/41.jpg>";
+				document.getElementById("pic").innerHTML = pic;
+
+				}
+				function sgwg5(){
+       var pic ="<img src=images/42.jpg>";
+				document.getElementById("pic").innerHTML = pic;
+
+				}
+				
+				function sgfg0(){
+		var pic ="<img src=images/16.jpg>";
+				document.getElementById("pic").innerHTML = pic;
+
+								}
+								
+				function sgfg1(){
+		var pic ="<img src=images/18.jpg>";
+				document.getElementById("pic").innerHTML = pic;
+
+				}
+				function sgfg2(){
+       var pic ="<img src=images/22.jpg>";
+				document.getElementById("pic").innerHTML = pic;
+
+				}
+				function sgfg3(){
+       var pic ="<img src=images/44.jpg>";
+				document.getElementById("pic").innerHTML = pic;
+
+				}
+				function sgfg4(){
+       var pic ="<img src=images/45.jpg>";
+				document.getElementById("pic").innerHTML = pic;
+
+				}
+				function sgfg5(){
+       var pic ="<img src=images/46.jpg>";
+				document.getElementById("pic").innerHTML = pic;
+
+				}
+		
+				function sgflg0(){
+		var pic ="<img src=images/43.jpg>";
+				document.getElementById("pic").innerHTML = pic;
+
+								}
+								
+				function sgflg1(){
+		var pic ="<img src=images/47.jpg>";
+				document.getElementById("pic").innerHTML = pic;
+
+				}
+				function sgflg2(){
+       var pic ="<img src=images/48.jpg>";
+				document.getElementById("pic").innerHTML = pic;
+
+				}
+				function sgflg3(){
+       var pic ="<img src=images/49.jpg>";
+				document.getElementById("pic").innerHTML = pic;
+
+				}
+				function sgflg4(){
+       var pic ="<img src=images/50.jpg>";
+				document.getElementById("pic").innerHTML = pic;
+
+				}
+				function sgflg5(){
+       var pic ="<img src=images/51.jpg>";
+				document.getElementById("pic").innerHTML = pic;
+
+				}
+      </script>	
+	</body>
+</html>

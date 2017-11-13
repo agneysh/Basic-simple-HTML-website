@@ -1,0 +1,169 @@
+@import url('reset.css');
+
+body{
+	background-color: transparent;
+    background-repeat: repeat, no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover;
+    background-size: auto, cover;
+	color: #fff;
+	font-family: 'Josefin Slab', Arial, sans-serif;
+	font-size: 18px;
+}
+.container{
+	position:relative;
+}
+a{
+	color: #fff;
+	text-decoration: none;
+}
+.clr{
+	clear: both;
+}
+.content{
+	position:relative;
+    width:580px;
+    margin: 0 auto;
+}
+
+h1{
+	margin:0px;
+	padding:20px;
+	font-size:42px;
+	color:#fff;
+	text-align:left;
+	font-weight:400;
+    text-align:left;
+}
+h1 span{
+	font-size:22px;
+	color:#ddd;
+	padding-top:10px;
+}
+/* Header Style */
+.header_m{
+	font-family:'Arial Narrow', Arial, sans-serif;
+	line-height: 24px;
+	font-size: 11px;
+	background: #000;
+	opacity: 0.9;
+	text-transform: uppercase;
+	z-index: 9999;
+	position: relative;
+	-moz-box-shadow: 1px 0px 2px #000;
+	-webkit-box-shadow: 1px 0px 2px #000;
+	box-shadow: 1px 0px 2px #000;
+}
+.header_m a{
+	padding: 0px 10px;
+	letter-spacing: 1px;
+	color: #ddd;
+	display: block;
+	float: left;
+}
+.header_m a:hover{
+	color: #fff;
+}
+.header_m span.right{
+	float: right;
+}
+.header_m span.right a{
+	float: none;
+	display: inline;
+}
+
+.more ul{
+	text-transform:uppercase;
+	font-size:11px;
+	padding:50px 0px 30px 20px;
+	height:30px;
+	clear:both;
+	font-family: 'Arial Narrow', Arial, sans-serif;
+	width:830px;
+	margin:0 auto;
+    color:#fff;
+}
+.more ul li{
+	float:left;
+	margin:0px 2px;
+}
+.more ul li.selected a,
+.more ul li.selected a:hover{
+	background:#000;
+	color:#fff;
+	text-shadow:none;
+}
+.more ul li a{
+	text-shadow:1px 1px 1px #fff;
+	color:#555;
+	background:#f7f7f7;
+	padding:3px 6px;
+	-moz-box-shadow:1px 1px 2px rgba(0,0,0,0.6);
+	-webkit-box-shadow:1px 1px 2px rgba(0,0,0,0.6);
+	box-shadow:1px 1px 2px rgba(0,0,0,0.6);
+}
+.more ul li a:hover{
+	background:#000;
+	color:#fff;
+	text-shadow:none;
+}
+
+nav_m{
+	display:block;
+}
+
+nav_m{
+	line-height:1;
+	}
+	
+
+nav_m
+{
+	margin:0;
+	padding:0;
+	border:0;
+	font-size:100%;
+	font:inherit;
+	vertical-align:baseline;
+}
+
+	#header_m {
+		background-color: inherit;
+		color: #fff;
+		cursor: default;
+		font-size: inherit;
+		height: 4.5em;
+		left: 0;
+		line-height: 4.4em;
+		position: fixed;
+		text-transform: uppercase;
+		top: 0;
+		width: 100%;
+		z-index: 10000;
+	}
+
+
+
+		#header_m nav {
+			height: inherit;
+			line-height: inherit;
+			position: absolute;
+			right: 1.25em;
+			top: 0;
+			vertical-align: middle;
+		}
+
+
+				#header_m nav > ul > li {
+					border-radius: 4px;
+					display: inline-block;
+					margin-left: 2.5em;
+					padding-left: 0;
+				}
+
+
+					
+

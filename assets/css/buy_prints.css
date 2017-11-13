@@ -1,0 +1,163 @@
+body{
+background-color: transparent;
+background-repeat: repeat, no-repeat;
+background-position: center center;
+background-attachment: fixed;
+-webkit-background-size: auto, cover;
+-moz-background-size: auto, cover;
+-o-background-size: auto, cover;
+background-size: auto, cover;
+color: #fff;
+font-family: 'Josefin Slab', Arial, sans-serif;
+	font-size: 14px;
+}
+
+.header{
+	font-family:'Arial Narrow', Arial, sans-serif;
+	line-height: 24px;
+	font-size: 11px;
+	background: #000;
+	opacity: 0.9;
+	text-transform: uppercase;
+	z-index: 9999;
+	position: relative;
+	-moz-box-shadow: 1px 0px 2px #000;
+	-webkit-box-shadow: 1px 0px 2px #000;
+	box-shadow: 1px 0px 2px #000;
+}
+.header a{
+	padding: 0px 10px;
+	letter-spacing: 1px;
+	color: #ddd;
+	display: block;
+	float: left;
+}
+.header a:hover{
+	color: #fff;
+}
+.header span.right{
+	float: right;
+}
+.header span.right a{
+	float: none;
+	display: inline;
+}
+
+nav{
+	display:block;
+}
+
+nav{
+	line-height:1;
+	}
+	
+
+nav
+{
+	margin:0;
+	padding:0;
+	border:0;
+	font-size:100%;
+	font:inherit;
+	vertical-align:baseline;
+}
+
+	#header {
+		background-color: inherit;
+		color: #fff;
+		cursor: default;
+		font-size: inherit;
+		height: 4.5em;
+		left: 0;
+		line-height: 4.4em;
+		position: fixed;
+		text-transform: uppercase;
+		top: 0;
+		width: 100%;
+		z-index: 10000;
+	}
+
+
+
+		#header nav {
+			height: inherit;
+			line-height: inherit;
+			position: absolute;
+			right: 1.25em;
+			top: 0;
+			vertical-align: middle;
+		}
+
+
+				#header nav > ul > li {
+					border-radius: 4px;
+					display: inline-block;
+					margin-left: 2.5em;
+					padding-left: 0;
+				}
+
+
+					
+
+
+.item p {
+	color: #c3c3c3;
+	font-weight: bold;
+	margin: 0;
+	text-align: center;
+}
+.products{
+	overflow:auto;
+	height:100%;
+	background:#fafafa;
+}
+.products ul{
+	list-style:none;
+	margin:0;
+	padding:0px;
+}
+.products li{
+	display:inline;
+	float:left;
+	margin:10px;
+}
+.item{
+	display:block;
+	text-decoration:none;
+}
+.item img{
+	border:1px solid #333;
+}
+.item p{
+	margin:0;
+	font-weight:bold;
+	text-align:center;
+	color:#c3c3c3;
+}
+.cart{
+	float:right;
+	position:relative;
+	width:260px;
+	height:100%;
+	background:#ccc;
+	padding:0px 10px;
+}
+.ctitle{
+	text-align:center;
+	color:#555;
+	font-size:18px;
+	padding:10px;
+}
+
+a{
+	color: #fff;
+	text-decoration: none;
+}
+
+h2{
+	align: center;
+}
+
+.button-checkout {
+    background: rgb(66, 184, 221);
+}
